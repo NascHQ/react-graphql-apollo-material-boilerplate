@@ -44,4 +44,4 @@ Please take a moment to review the [guidelines for contributing](CONTRIBUTING.md
 ## License
 
 This software is released under the terms of the
-[MIT license](https://github.com/csscomb/csscomb.js/blob/master/LICENSE).
+[MIT license](LICENSE).
