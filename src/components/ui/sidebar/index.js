@@ -9,6 +9,7 @@ import Divider from 'material-ui/Divider';
 import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import ContactMailIcon from 'material-ui-icons/ContactMail';
 import { Link } from 'react-router-dom';
+import Offered from './offered';
 
 const styles = {
   list: {
@@ -28,6 +29,11 @@ const styles = {
     bottom: '1rem',
     width: '100%',
     textAlign: 'center'
+  },
+  offered: {
+    padding: 0,
+    margin: 0,
+    fontStyle: 'italic'
   }
 };
 
@@ -59,10 +65,8 @@ class Sidebar extends React.Component {
         </List>
         <Divider />
         <div className={classes.footer}>
-          <p>
-            <strong>Nasc.io</strong>
-          </p>
-          <p>Born to be different</p>
+          <Offered key="nasc-logo" />
+          <p className={classes.offered}>Proudly powered by</p>
         </div>
       </div>
     );
